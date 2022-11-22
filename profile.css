@@ -1,0 +1,144 @@
+body {
+    background: rgb(157, 223, 223);
+    position: center;
+    
+}
+.box{
+    margin-top: 85px;
+    margin-left: 450px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #cfa4d6
+}
+
+.profile-button {
+    background: rgb(233, 170, 89);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #a59ba7
+}
+
+.profile-button:focus {
+    background: #454246;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #787279;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #504852;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+
+
+
+/*body{
+    background-color: dimgray ;
+}
+*:focus{
+    outline: none;
+}
+.box{
+    box-sizing: border-box;
+    width: 135px;
+    height: 153px;
+    border: 2px solid #3498;
+    box-shadow: -3px -3px 7px rgb(115, 187, 216);
+    border-radius: 50%;
+    background-color: 5px;
+    background-color:aqua ;
+    margin-top: 50px;
+    overflow: hidden;
+    
+}
+img{
+    box-sizing: border-box;
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    margin: 0;
+    border: 5px solid #3498;
+    padding: 3px;
+    background-color: white;
+    }
+input[type="text"]{
+   margin-top: 25px;  
+}
+input[type="text"],
+input[type="email"]{
+  display: block; 
+  box-sizing: border-box; 
+  background: none;
+  color:#3498db;
+  margin-bottom: 30px;
+  padding: 4px;
+  width:220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #00082e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus{
+    border-bottom: 2px solid #3498db;  
+    border-bottom-right-radius: 20px;
+    color: #3498db;
+    transition: 0.2 ease;
+}
+button{
+    border: 1px solid #3498db;
+    background-color: black;
+    color:white;
+    height:30px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0px;
+    
+}
+button:hover{
+    transform: scale(1.1);
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color:aquamarine;
+    color:white;
+    border:1px solid #3498db;
+    padding:2px 15px;
+    border-radius: 5px;
+    
+}
+label:hover{
+    background-color: #3498db;
+    color:antiquewhite;
+}
+.box:hover{
+    width: 360px;
+    height: 600px;
+    border-radius: 5px;
+}
