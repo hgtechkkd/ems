@@ -80,10 +80,7 @@ app.get('/projects',(req,res)=>{
 //     }
     
 // });
-// app.get('/',(req,res)=>{
-//     app.locals.message= req.session.message
-//     res.render('welcome')
-// });
+
 app.get('/',(req,res)=>{
     app.locals.message= req.session.message
     res.render('welcome')
