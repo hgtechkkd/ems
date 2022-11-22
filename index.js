@@ -82,9 +82,7 @@ app.post('/login', async(req,res)=>{
     data = req.body
     console.log(data)
     let founduser = await(await db.collection('users').find({'email':data.email})).toArray() 
-    // console.log(founduser[0].password) [].length=0,, [{}].length=1
     if(founduser.length>0){
-        // console.log( bcrypt.compareSync(data.psw,founduser.password))
        if( bcrypt.compareSync(data.psw,founduser[0]?.password)){
         req.session.message ="Successfully logged In"
         req.session.user = founduser
@@ -116,7 +114,6 @@ app.get('/register',(req,res)=>{
 });
 app.post("/register",async(req,res)=>{
     let data = req.body
-    // console.log(data)
     let founduser = await(await db.collection('users').find({'email':data.email})).toArray()
     console.log(founduser)
     if(founduser.length>0){
@@ -131,7 +128,6 @@ app.post("/register",async(req,res)=>{
         'password':bcrypt.hashSync(data.password,10)
     }
     db.collection('users').insertOne(user) 
-    // console.log(users)
     res.redirect('/login')
     });
 
