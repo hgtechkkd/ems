@@ -1,0 +1,43 @@
+
+.mainContainer {
+    color: #212121 !important;
+    font-weight: 500 !important;
+    margin-left: 5.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 2.5rem !important;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    
+}
+.mainCard{
+    min-width: 1000px;
+    min-height: 300px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 35px;
+    display: flex;
+    
+    
+}
+
+.trackerForm{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #464e5f !important;
+    display: flex;
+    
+    
+}
+.trackerForm input{
+    height: 30px;
+    width: 200px;
+    border: 2px double black;
+    
+}
+
+.loginTime {
+    height: 100px;
+    width: 200px;
+    
+    
+}
