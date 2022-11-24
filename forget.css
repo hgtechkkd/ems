@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    column-count: 1;
+    background:url('/frgt.jpg');
+
+}
+.container{
+    background-color: whitesmoke;
+    border-radius: 5px;
+     height: 300px;
+     border: 1px solid blue;
+     width: 350px;
+     
+    display:-ms-inline-flexbox;
+    
+    margin-left: 600px;
+    margin-top: 180px;
+} 
+
+input[type="text"]{
+    height: 8px;
+    width: 250px;
+    padding-top: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+input[type="otp"]{
+    height: 8px;
+    width: 250px;
+    padding-top: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    
+}
+button.btn-close{
+    height: 33px;
+    width: 40px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    margin-left: 5px;
+    background-color:rgb(82, 97, 230);
+}
+button.btn-close:hover{
+    color: white;
+}
+
+input[type="create password"]{
+    height: 8px;
+    width: 250px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+input[type="confirm"]{
+    height: 8px;
+    width: 250px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.sign-in button{
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 125px;
+    /* padding-bottom: 20px; */
+    width: 70px;
+    background-color: blue;
+}
+h1{
+    font-size: medium;
+}
+
+
+
+
