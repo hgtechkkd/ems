@@ -71,7 +71,6 @@ app.get('/message',(req,res)=>{
     let user = req.session.user
     if(user){
         app.locals.user=req.session.user
-        // console.log(req.session.user)
         res.render('message')
     }
     else{
