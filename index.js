@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const session = require('express-session')
 
 
-const url = 'mongodb://127.0.0.1:27017/ems'// localhost:27017/ems == 127.0.0.1:27017/ems (true) , ems == database name
+const url = 'mongodb://127.0.0.1:27017/ems'
 mongoose.connect(url)
 const db = mongoose.connection;
 db.on('open',()=>console.log('database is connected'))
@@ -20,22 +20,10 @@ app.set('view engine','ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded())
 
-
-// app.get('/index',(req,res)=>{
-//     let user = req.session.user
-//     if(user){
-//         res.render('index')
-//     }
-//     else{
-//         res.send("<h1>Please log in to access this page.....</h1>")
-//     }
-// });
-
 app.get('/home',(req,res)=>{
     let user = req.session.user
     if(user){
         app.locals.user=req.session.user
-        // console.log(req.session.user)
         res.render('home')
     }
     else{
@@ -47,7 +35,6 @@ app.get('/teams',(req,res)=>{
     let user = req.session.user
     if(user){
         app.locals.user=req.session.user
-        // console.log(req.session.user)
         res.render('teams')
     }
     else{
@@ -59,7 +46,6 @@ app.get('/projects',(req,res)=>{
     let user = req.session.user
     if(user){
         app.locals.user=req.session.user
-        // console.log(req.session.user)
         res.render('projects')
     }
     else{
@@ -149,12 +135,3 @@ app.post("/register",async(req,res)=>{
 
 app.listen(5000,()=>
 console.log('listening on port 5000\nvisit localhost:5000 0n your browser...'));
-// mongodb://localhost:27017
-
-
-// steps to tracker page
-//  step1 => create ejs or html page
-//  step2 => create endpoints using get and post 
-// step3=> send user entered data to backend end point through post method
-// step4 => check wheither the receving properly or not
-// step => save the user send data in db using respective collection in obj or json or document format

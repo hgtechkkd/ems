@@ -1,5 +1,4 @@
 
-/* MAin Section */
 .main{
     position: relative;
     padding: 20px;
@@ -66,16 +65,5 @@
     color: #fff;
     transition: 0.5s;
   }
-  /*
-  .main-top{
-    display: flex;
-    width: 100%;
-  }
-  .main-top i{
-    position: absolute;
-    right: 0;
-    margin: 10px 30px;
-    color: rgb(94, 70, 70);
-    cursor: pointer;
-  }
+  
   

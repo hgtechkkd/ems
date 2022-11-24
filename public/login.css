@@ -7,7 +7,7 @@ body{
 }
 form{
     width: 400px;
-    height:400px;
+    height:450px;
     margin-left: 150px;
     margin-top: 13%;
     /* margin-bottom: 50px; */
@@ -28,6 +28,7 @@ h2{
 .container{
     padding: 16px;
     padding-bottom:50px;
+    width: 400px;
 }
 input[type=text], input[type=password]{
     width:90%;
@@ -85,7 +86,7 @@ input[type=text], input[type=password]{
     color: #eb3349;
     text-decoration: none;
     /* cursor:pointer; */
-    padding-top: 10px;
+    padding-top:50px;
 }
 
 #signup-link:hover{
