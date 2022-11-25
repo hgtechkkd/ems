@@ -64,6 +64,17 @@ app.get('/message',(req,res)=>{
     }
 });
 
+app.get('/attendence',(req,res)=>{
+    let user = req.session.user
+    if(user){
+        app.locals.user=req.session.user
+        res.render('attendence')
+    }
+    else{
+        res.send("<h1>Please log in to access this page.....</h1>")
+    }
+});
+
 
 
 app.get('/',(req,res)=>{

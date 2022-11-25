@@ -1,4 +1,19 @@
-
+.mainContainer {
+  color: #212121 !important;
+  font-weight: 500 !important;
+  margin-left: 5.5rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 2.5rem !important;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.Subcontainer{
+  min-width: 1000px;
+  min-height: 500px;
+  margin-top: 30px;
+  background-color: white;
+  padding: 35px;
+} 
 .main{
     position: relative;
     padding: 20px;
